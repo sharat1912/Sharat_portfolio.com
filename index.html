@@ -1,151 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sharat Chandra Kommineni - Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header, section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 2rem 0;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .highlight {
-      font-weight: bold;
-    }
-    .graphic {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .graphic img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .flex {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .contact-icons li {
-      margin: 0.5rem 0;
-      list-style: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="graphic">
-      <img src="https://undraw.co/api/illustrations/portfolio.svg" alt="Portfolio Graphic" />
-    </div>
-    <h1>👨‍💻 Sharat Chandra Kommineni - Full Stack Developer Portfolio</h1>
-    <p>Welcome! I'm <strong>Sharat Chandra Kommineni</strong>, a passionate <strong>Full Stack Developer</strong> with over <strong>7 years</strong> of experience in crafting scalable and performant applications.</p>
-  </header>
-
-  <section>
-    <h2>🚀 About Me</h2>
-    <div class="flex">
-      <ul>
-        <li>💻 Expertise in <strong>Java, Spring Boot, Angular, React.js, Node.js</strong>.</li>
-        <li>☁️ Skilled in cloud: <strong>AWS, Azure, GCP</strong>.</li>
-        <li>📦 Microservices & containers: <strong>Docker, Kubernetes, OpenShift</strong>.</li>
-        <li>🔐 Security & streaming: <strong>OAuth2, JWT, Kafka, WebFlux</strong>.</li>
-      </ul>
-      <div class="graphic" style="flex: 1;">
-        <img src="https://undraw.co/api/illustrations/software_engineer.svg" alt="Engineer" />
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="Logo">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I'm <span>Sharat Chandra</span><br>Kommineni</h1>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>💼 Experience Highlights</h2>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="Profile">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I'm <strong>Sharat Chandra Kommineni</strong>, a results-driven <strong>Full Stack Developer</strong> with over <strong>7 years</strong> of experience building scalable, secure, and high-performance web applications.
+          </p>
+          <ul>
+            <li>🌐 Strong expertise in <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Angular (up to v17)</strong>, <strong>React.js</strong>, and <strong>Node.js</strong>.</li>
+            <li>☁️ Skilled in <strong>AWS</strong>, <strong>Azure</strong>, and <strong>GCP</strong>.</li>
+            <li>🪖 Proficient in <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>OpenShift</strong>, and <strong>CI/CD</strong> pipelines.</li>
+            <li>🔐 Focused on secure, event-driven apps using <strong>JWT</strong>, <strong>OAuth2</strong>, <strong>Kafka</strong>, and <strong>WebFlux</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h3>🔹 Federal Express | Full Stack Java Developer (2024–Present)</h3>
-    <ul>
-      <li>🔧 Built microservices + Angular/React frontends for logistics tracking.</li>
-      <li>⚡ Used <strong>Kafka</strong> + <strong>Spring WebFlux</strong> for real-time processing.</li>
-      <li>☁️ Deployed apps on <strong>AWS</strong>: ECS, Lambda, DynamoDB.</li>
-    </ul>
+  <div id="experience">
+    <div class="container">
+      <h1 class="sub-title">Experience Highlights</h1>
+      <div class="services-list">
+        <div>
+          <h2>Federal Express</h2>
+          <p>Built Angular/React frontends, Spring WebFlux pipelines, and AWS microservices (ECS, Lambda, DynamoDB).</p>
+        </div>
+        <div>
+          <h2>Bank of New York</h2>
+          <p>Developed APIs using Spring Boot and Kafka. Ensured SOX and PCI-DSS compliance.</p>
+        </div>
+        <div>
+          <h2>Jade Global</h2>
+          <p>Migrated legacy apps to cloud microservices. Automated CI/CD with Terraform and Jenkins.</p>
+        </div>
+        <div>
+          <h2>Intex Technologies</h2>
+          <p>Created e-commerce portals with Angular and React. Integrated IoT and real-time notifications with Kafka.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <h3>🔹 Bank of New York | Full Stack Java Developer (2022–2023)</h3>
-    <ul>
-      <li>🛡️ Built financial APIs with <strong>Spring Boot, JWT, OAuth2</strong>.</li>
-      <li>🔄 Developed Kafka pipelines & Spring Batch jobs.</li>
-      <li>📋 Ensured <strong>SOX</strong> & <strong>PCI-DSS</strong> compliance.</li>
-    </ul>
+  <div id="skills">
+    <div class="container">
+      <h1 class="sub-title">Technical Skills</h1>
+      <p><strong>Languages & Frameworks:</strong> Java 17, Spring Boot, Angular, React.js, Node.js, TypeScript, HTML5, CSS3</p>
+      <p><strong>Cloud:</strong> AWS (Lambda, EC2, S3, RDS), Azure, GCP</p>
+      <p><strong>Databases:</strong> Oracle, PostgreSQL, MySQL, DynamoDB, MongoDB</p>
+      <p><strong>DevOps:</strong> Docker, Kubernetes, Jenkins, GitHub, Maven</p>
+      <p><strong>Other:</strong> Kafka, RabbitMQ, WebFlux, Swagger, OAuth2, JWT</p>
+    </div>
+  </div>
 
-    <h3>🔹 Jade Global (2020–2022)</h3>
-    <ul>
-      <li>🌐 Migrated monoliths to <strong>cloud-native microservices</strong>.</li>
-      <li>🔁 Built <strong>CI/CD</strong> with <strong>Terraform, GitLab, Jenkins</strong>.</li>
-    </ul>
+  <div id="education">
+    <div class="container">
+      <h1 class="sub-title">Education & Certification</h1>
+      <ul>
+        <li>Master of Science in Computer Science, University of Memphis</li>
+        <li>AWS Certified Solutions Architect – Associate</li>
+      </ul>
+    </div>
+  </div>
 
-    <h3>🔹 Intex Technologies (2018–2019)</h3>
-    <ul>
-      <li>🛒 Developed e-commerce apps using <strong>Angular, React</strong>.</li>
-      <li>📡 Integrated IoT & messaging via <strong>Kafka</strong>, <strong>RabbitMQ</strong>.</li>
-    </ul>
-  </section>
+  <div id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact</h1>
+      <div class="row">
+        <div class="contact-left">
+          <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          <p><a href="https://linkedin.com/in/your-profile">LinkedIn</a></p>
+          <p><a href="https://yourusername.github.io/portfolio">Portfolio Website</a></p>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <section>
-    <h2>🧰 Technical Skills</h2>
-    <ul>
-      <li><strong>Languages & Frameworks:</strong> Java 17, Spring Boot, Angular 17, React.js, Node.js, TypeScript, HTML5, CSS3</li>
-      <li><strong>Cloud:</strong> AWS (Lambda, EC2, S3), Azure, GCP</li>
-      <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, DynamoDB</li>
-      <li><strong>DevOps:</strong> Docker, Kubernetes, GitLab, Jenkins</li>
-      <li><strong>Tools:</strong> Kafka, RabbitMQ, WebFlux, OAuth2, JWT, Swagger, JUnit</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🎓 Education & Certification</h2>
-    <ul>
-      <li>🎓 <strong>M.S. in Computer Science</strong>, University of Memphis</li>
-      <li>📜 <strong>AWS Certified Solutions Architect – Associate</strong></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📬 Contact</h2>
-    <ul class="contact-icons">
-      <li>📧 <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-      <li>🔗 <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></li>
-      <li>🌐 <a href="https://yourusername.github.io/portfolio" target="_blank">Portfolio Website</a></li>
-    </ul>
-    <p>Thanks for visiting! Check out my <a href="./projects.html">projects</a> or <a href="./assets/docs/resume.pdf">download my resume</a>.</p>
-  </section>
+  <div class="copyright">
+    <p>Copyright © Sharat Chandra Kommineni. Made with <i class="fas fa-heart"></i> by Sharat.</p>
+  </div>
 </body>
 </html>
